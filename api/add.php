@@ -4,11 +4,11 @@ if(!empty($_FILES['img']['tmp_name'])){
     move_uploaded_file($_FILES['img']['tmp_name'],"../img/".$_FILES['img']['name']);
     $data['img']=$_FILES['img']['name'];
 }else{
-    if($DB->table!='admin' && $DB->table!='menu'){
+    if($DB->table!='icon' && $DB->table!=''){
         $data['img']='';
     }
 }
-// dd($_POST);
+dd($_POST);
 
 switch($DB->table){
     case "photo":
@@ -21,8 +21,12 @@ switch($DB->table){
         $data['sh']=0;
         $data['type']=$_POST['type'];
     break;
+    case "icon":
+        $data['text']=$_POST['text'];
+        $data['sh']=0;
+    break;
 }
-// dd($data);
+dd($data);
 $DB->save($data);
-to("../back.php?do=".$DB->table)
+// to("../back.php?do=".$DB->table)
 ?>

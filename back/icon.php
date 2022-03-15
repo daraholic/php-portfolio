@@ -1,10 +1,12 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 <div style="width:99%; height:87%; margin:auto; overflow:auto; border:#666 1px solid;">
     <p class="t cent botli"><?=$DB->title;?></p>
     <form method="post"  action="api/edit.php?do=<?=$DB->table;?>">
         <table width="100%">
             <tbody>
                 <tr class="yel">
-                    <td width="45%"><?=$DB->header;?></td>
                     <td width="23%"><?=$DB->append;?></td>
                     <td width="7%">顯示</td>
                     <td width="7%">刪除</td>
@@ -14,27 +16,21 @@
                 $rows=$DB->all();
                 foreach($rows as $row){
                     $checked=($row['sh']==1)?'checked':'';
+                    // dd($row);
                 ?>
                 <tr>
-                    <td width="25%">
-                        <img src="./img/<?=$row['img'];?>" style="width:30px;height:30px">
-                    </td>
                     <td width="43%">
+                    <i class="fa-solid fa-cat"></i>
                         <input type="text" name="text[]" value="<?=$row['text'];?>" style="width:95%">
-                        <!-- <i class="fas fa-cat fa-2x"> -->
                     </td>
                     <td width="7%">
                         <input type="radio" name="sh" value="<?=$row['id'];?>" <?=$checked;?>>
                     </td>
                     <td width="7%">
                         <input type="checkbox" name="del[]" value="<?=$row['id'];?>">
-
                     </td>
                     <td>
-                    <input type="hidden" name="id[]" value="<?=$row['id'];?>">
-                    <input type="button"
-                            onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/upload.php?do=<?=$DB->table;?>&id=<?=$row['id'];?>&#39;)" 
-                              value="更新圖片">
+                        <input type="hidden" name="id[]" value="<?=$row['id'];?>">
                     </td>
                 </tr>
                 <?php

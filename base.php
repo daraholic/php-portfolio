@@ -54,6 +54,11 @@ class DB{
             $this->header="作品名稱";
             $this->append="作品網址";
             break;
+            case "type";
+            $this->title="分類管理";
+            $this->button="新增分類";
+            $this->header="項目";
+            break;
             case "icon";
                 $this->title="icon管理";
                 $this->button="新增icon";
