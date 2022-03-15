@@ -23,47 +23,16 @@
         <table width="100%">
             <tbody>
                 <tr class="yel">
-                    <td width="10%"><?=$DB->upload;?></td>
                     <td width="10%"><?=$DB->header;?></td>
-                    <td width="30%"><?=$DB->append;?></td>
-                    <td width="10%">分類</td>
-                    <td width="5%">顯示</td>
                     <td width="5%">刪除</td>
-                    <td width="3%"></td>
                 </tr>
                 <?php
                 $rows=$DB->all();
                 foreach($rows as $row){
-                    $checked=($row['sh']==1)?'checked':'';
                 ?>
                 <tr>
                     <td>
-                        <img src="./img/<?=$row['img'];?>" style="width:100px;height:128px">
-                    </td>
-                    <td>
-                        <input type="text" name="name[]" value="<?=$row['name'];?>">
-                    </td>
-                    <td>
-                        <input type="text" name="href[]" value="<?=$row['href'];?>" style="width:320px">
-                    </td>
-                    <td>
-                        <select name="type[]" style="width:90%">
-                            <?php
-                            $types=$Type->all();
-                            foreach($types as $type){
-                                $selected=($type['id']==$row['type'])?'selected':'';
-                                echo "<option value='{$type['id']}' $selected>{$type['type']}</option>";
-                                
-                            ?>
-                            <?php
-                            }
-                            ?>
-                        </select>
-                        
-
-                    </td>
-                    <td>
-                        <input type="checkbox" name="sh[]" value="<?=$row['id'];?>" <?=$checked;?>>
+                        <input type="text" name="type[]" value="<?=$row['type'];?>">
                     </td>
                     <td>
                         <input type="checkbox" name="del[]" value="<?=$row['id'];?>">

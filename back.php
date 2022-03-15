@@ -51,7 +51,10 @@ include_once "base.php";
 
                     <div class="font-weight-bold">作品集管理</div>
                     <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=poedit">
-                        <div class="mainmu">編輯</div>
+                        <div class="mainmu">作品列表</div>
+                    </a>
+                    <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=type">
+                        <div class="mainmu">變更分類</div>
                     </a>
                 
 
