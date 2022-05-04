@@ -5,8 +5,8 @@
                 <img src="./img/<?=$Photo->find(['sh' => 1])['img'];?>" alt="<?=$Photo->find(['sh' => 1])['text'];?>" width="288" height="364">
             </div><br>
                 <div class="col-8 text-VeryPeri bg-EggshellBlue"><br>
-                    <h2><i class="fa fa-certificate fa-fw"></i>About</h2>
-                    <h4><?=$Info->find(1)['text'];?></h4>
+                    <h4><i class="fa fa-certificate fa-fw"></i>About</h4>
+                    <h2><?=$Info->find(1)['text'];?></h2>
                     <p><i class="fa fa-briefcase"></i>&nbsp;<?=$Info->find(2)['text'];?></p>
                     <p><i class="fa fa-home"></i>&nbsp;<?=$Info->find(3)['text'];?></p>
                     <p><i class="fa fa-envelope"></i>&nbsp;<?=$Info->find(4)['text'];?></p>

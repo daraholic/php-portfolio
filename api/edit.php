@@ -1,6 +1,6 @@
 <?php
 include_once "../base.php";
-dd($_POST);
+// dd($_POST);
 foreach($_POST['id'] as $key => $id){
     if(isset($_POST['del']) && in_array($id,$_POST['del'])){
         //刪除
@@ -30,10 +30,10 @@ foreach($_POST['id'] as $key => $id){
             break;
             
         }
-        dd($data);
+        // dd($data);
         $DB->save($data);
     }
 }
-// to("../back.php?do=".$DB->table);
+to("../back.php?do=".$DB->table);
 
 ?>

@@ -8,7 +8,7 @@ if(!empty($_FILES['img']['tmp_name'])){
         $data['img']='';
     }
 }
-dd($_POST);
+// dd($_POST);
 
 switch($DB->table){
     case "photo":
@@ -26,7 +26,7 @@ switch($DB->table){
         $data['sh']=0;
     break;
 }
-dd($data);
+// dd($data);
 $DB->save($data);
-// to("../back.php?do=".$DB->table)
+to("../back.php?do=".$DB->table)
 ?>
