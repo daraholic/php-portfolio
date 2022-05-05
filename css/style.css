@@ -19,7 +19,7 @@ h6 {
   /* background: rgba(30%,0%,0%,0.6); */
   /* background:rgba(0,0,0,0.1); */
   /* opacity:0.4; */
-  background: transparent;
+  /* background: transparent; */
 }
 
 .art1 {
@@ -130,8 +130,8 @@ h6{
 
 div.transbox {
   /* margin: 30px; */
-  background-color: #ffffff transparent;
-  border: 1px solid transparent;
+  /* background-color: #ffffff transparent; */
+  /* border: 1px solid transparent; */
   /* opacity: 0.; */
 }
 
@@ -227,7 +227,7 @@ body {
   display: none;
 }
 
-.mainmu2 {
+/* .mainmu2 {
   position: relative;
   border-radius: 10px;
   background: url(../icon/menu3.fw.png)center no-repeat;
@@ -240,7 +240,7 @@ body {
 .mainmu2:hover {
   background: url(../icon/menu4.fw.png) center no-repeat;
   background-size: cover;
-}
+} */
 
 #lf {
   height: 540px;
@@ -307,4 +307,12 @@ input:focus, button:focus {
   color: #0CF;
   cursor: pointer;
   text-decoration: none;
+}
+
+@media (max-width: 1px){
+  .aboutcard {
+      width: 100%;
+      color: #09C;
+  }
+
 }

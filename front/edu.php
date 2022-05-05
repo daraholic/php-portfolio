@@ -1,8 +1,8 @@
 <div class="col-12 text-grey transbox p-3 mb-5 bg-body rounded">         
     <div class="container" id="educ">
-        <h3><i class="fa fa-asterisk fa-fw"></i>Education</h3>
+        <h4><i class="fa fa-asterisk fa-fw"></i>Education</h4>
             <div class="container">
-                <h5>Workforce Development Agency, Ministry of Labor </h5>
+                <h2>Workforce Development Agency, Ministry of Labor </h2>
                 <h6><i class="fa fa-calendar fa-fw"></i>Sept. 2021 – Mar. 2022</h6>
                 <p>learning web programming</p>
             </div>
