@@ -84,7 +84,7 @@
         <!-- education -->
         <?php include "./front/edu.php";?>
         <!-- work -->
-        <?php include "./front/skill.php";?>
+        <?php include "./front/work.php";?>
         <!-- skill & languages-->
         <?php include "./front/skill.php";?>
         <!-- portfolio -->

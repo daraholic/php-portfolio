@@ -1,5 +1,5 @@
 <!-- Portfolio || 作品集 -->
-<div class="col-12 text-grey transbox mb-5" id="por"><br>
+<div class="col-12 text-grey transbox mb-5" id="por">
     <h3><i class="fa fa-asterisk fa-fw"></i>PORTFOLIO</h3>
 
     <div class="container">
@@ -62,5 +62,5 @@
                 </div>
             </div>
         </div>
-    </div><br>
+    </div>
     <!-- Portfolio || 作品集 END-->

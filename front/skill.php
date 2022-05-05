@@ -1,5 +1,5 @@
 <!-- sills & languages -->
-<div class="col-12 text-grey transbox mb-5" id="skill"><br>
+<div class="col-12 text-grey transbox mb-1" id="skill"><br>
                 <h3><i class="fa fa-asterisk fa-fw"></i>Skills</h3>
 
                 <div>Adobe Photoshop</div>
@@ -69,6 +69,6 @@
                         aria-valuemax="100" style="width:80%">
                         80%
                     </div>
-                </div><br>
+                </div>
             </div>
             <!-- sills & languages end-->

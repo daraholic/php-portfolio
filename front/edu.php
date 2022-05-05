@@ -1,4 +1,4 @@
-<div class="col-12 text-grey transbox p-3 mb-5 bg-body rounded">         
+<div class="col-12 text-grey transbox p-3 mb-1 bg-body rounded">         
     <div class="container" id="educ">
         <h4><i class="fa fa-asterisk fa-fw"></i>Education</h4>
             <div class="container">
@@ -23,7 +23,7 @@
             <div class="container">
                 <h6><i class="fa fa-calendar fa-fw"></i>Jan. 2012</h6>
                 <p>Got the certificate of Japanese Language Program completion</p><br>
-            </div><br>
+            </div>
     </div>
-</div><br>
+</div>
 <!-- educations end -->

@@ -1,5 +1,5 @@
 <!-- experience -->
-<div class="col-12 text-grey transbox mb-5" id="expe"><br>
+<div class="col-12 text-grey transbox mb-1" id="expe">
     <h2><i class="fa fa-suitcase fa-fw"></i>Experience
     </h2>
     <div class="container">
