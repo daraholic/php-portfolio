@@ -19,8 +19,10 @@ h6 {
   /* background: rgba(30%,0%,0%,0.6); */
   /* background:rgba(0,0,0,0.1); */
   /* opacity:0.4; */
-  /* background: transparent; */
+  background: transparent !important;
+  border: none !important;
 }
+
 
 .art1 {
   opacity: 0.4;
@@ -307,12 +309,4 @@ input:focus, button:focus {
   color: #0CF;
   cursor: pointer;
   text-decoration: none;
-}
-
-@media (max-width: 1px){
-  .aboutcard {
-      width: 100%;
-      color: #09C;
-  }
-
 }
