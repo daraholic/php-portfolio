@@ -1,10 +1,10 @@
-<div class="col-12 mb-5" id="about">
-    <div class="container">
+<div class="col-12 mb-5 mx-5" id="about">
+    <div class="container" style="width: 38rem;">
         <div class="row">
             <div class="" style="width: 18rem;">
                 <img src="./img/<?=$Photo->find(['sh' => 1])['img'];?>" alt="<?=$Photo->find(['sh' => 1])['text'];?>" width="288" height="364">
             </div>
-            <div class="" style="width: 18rem;">
+            <div class="" style="width: 20rem;">
                 <div class="card-body text-VeryPeri">
                     <h4><i class="fa fa-certificate fa-fw"></i>About</h4>
                     <h2><?=$Info->find(1)['text'];?></h2>
